@@ -1,0 +1,51 @@
+@mixin border-radius($radius) {
+  border-radius: $radius;
+}
+
+$link-color: #ffffff;
+$border-radius: 3px;
+$title-font-size: 12px;
+
+body {
+  background: url("../img/thai-temple.jpg") no-repeat;
+  background-size: cover;
+
+  a {
+  font-family: 'Playball', cursive;
+  font-size: 22px;
+  }
+
+  a:hover {
+    text-decoration: underline;
+    color: #faf994;
+  }
+
+  .navbar {
+    border: transparent 1px $border-radius;
+
+    .container-fluid {
+      background-color: #35231a;
+      box-shadow: 0 3px 6px #000000;
+      z-index: 2;
+
+      .navbar-brand {
+
+        img {
+          width: 60px;
+          height: auto;
+        }
+      }
+    }
+
+    .container {
+      width: 80%;
+      margin: 0 10% 0 10%;
+      padding: 7% 0 0 0;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  }
+
+
